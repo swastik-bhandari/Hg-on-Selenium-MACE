@@ -1,0 +1,25 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+======================================================================
+SANITY CHECKS - MACE-MP-0+D3
+======================================================================
+Using Materials Project MACE for MACECalculator with /home/swastik/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Using TorchDFTD3Calculator for D3 dispersion corrections
+
+-----------------------------------
+1. ZINC-BLENDE HgSe
+-----------------------------------
+Hg cohesive energy (alpha-Hg): 0.765 eV/atom  (exp. 0.67) -> the isolated Hg atom reference is reasonable
+a(HgSe)         : 6.2008 Å   (exp. 6.085, +1.9 %)
+d(Hg-Se)        : 2.6850 Å   (exp. 2.635)
+formation energy: 197.5 kJ/mol  (exp. dHf(298 K) cca -46 kJ/mol, ref. Hg(l))
+  -> error cca 244 kJ/mol : MACE-MP-0+D3 strongly UNDERBINDS the chemical Hg-Se bond,
+     although the HgSe geometry is fine. Chemisorption of Hg on Se is therefore underestimated.
+
+-----------------------------------
+2. SLAB THICKNESS : 4 vs 3 CHAIN LAYERS
+-----------------------------------
+E_ads (4 layers, from 03_) taken below for comparison
+  4 chain layers (108 Se): E_ads = -24.66 kJ/mol
+  3 chain layers (81 Se): E_ads = -24.06 kJ/mol
+  difference 4 - 3 layers: -0.60 kJ/mol
