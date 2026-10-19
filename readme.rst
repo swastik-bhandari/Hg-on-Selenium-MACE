@@ -41,6 +41,22 @@ Folders (run in this order)
 Every folder has a readme.rst, the scripts, and the saved outputs (``*.py_logfileSAVED``,
 ``.traj``, ``.vasp`` for VESTA).
 
+Structure
+---------
+Hg (grey-blue) adsorbed on the t-Se(10-10) surface (Se orange), MACE-MP-0+D3, relaxed.
+
+.. image:: images/image_top.png
+   :width: 45%
+   :alt: Hg on t-Se(10-10), top view
+
+.. image:: images/image_side.png
+   :width: 45%
+   :alt: Hg on t-Se(10-10), side view
+
+Top view (left) and side view (right). Crossed atoms in the side view = fixed bottom chain layers.
+
+Relaxation movie : 07_movies/Hg_on_tSe_relax.gif
+
 Main results (298 K)
 --------------------
 
