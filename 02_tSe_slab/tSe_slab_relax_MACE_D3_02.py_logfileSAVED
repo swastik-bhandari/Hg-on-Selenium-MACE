@@ -1,0 +1,18 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+======================================================================
+CLEAN t-Se(10-10) SLAB RELAXATION - MACE-MP-0+D3
+======================================================================
+
+Atoms per chain layer (bottom -> top): [27 27 27 27]
+Fixed atoms: 54 of 108
+Using Materials Project MACE for MACECalculator with /home/swastik/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Using TorchDFTD3Calculator for D3 dispersion corrections
+
+Single point energy: -383.540461 eV  (0.9 s per evaluation)
+
+Relaxed slab energy : -383.593299 eV
+Relaxation energy   : -0.052838 eV  (35 BFGS steps)
+Max displacement of free atoms: 0.074 Å
+
+Relaxed slab saved as tSe_slab_relaxed.vasp
