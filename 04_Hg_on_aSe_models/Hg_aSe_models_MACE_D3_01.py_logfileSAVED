@@ -1,0 +1,40 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+======================================================================
+Hg ON MODELS OF RED AMORPHOUS Se - MACE-MP-0+D3
+======================================================================
+Using Materials Project MACE for MACECalculator with /home/swastik/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Using TorchDFTD3Calculator for D3 dispersion corrections
+
+E(Hg atom) = 0.090456 eV
+
+-----------------------------------
+A) Se8 CROWN RING
+-----------------------------------
+Relaxed Se8: d(Se-Se) = 2.345 Å (exp. 2.34), angle = 101.8 deg (exp. 105.7), 6 steps
+  Se8_axis   E_ads =  -0.2176 eV =   -21.00 kJ/mol ; Hg-Se = 3.600 3.600 Å ; 21 steps
+  Se8_atom   E_ads =  -0.1918 eV =   -18.50 kJ/mol ; Hg-Se = 3.641 4.111 Å ; 54 steps
+  Se8_bond   E_ads =  -0.2204 eV =   -21.27 kJ/mol ; Hg-Se = 3.853 3.869 Å ; 72 steps
+
+-----------------------------------
+B) CHAIN-END DEFECT ON t-Se(10-10)
+-----------------------------------
+Removed Se atom 40 ; 1-coordinated chain-end Se atoms: [np.int64(26), np.int64(39)]
+Defect slab relaxed in 172 steps, E = -379.558066 eV
+  chainend_gap  E_ads =  -0.4112 eV =   -39.67 kJ/mol ; Hg-Se = 2.968 3.494 Å ; 71 steps
+  chainend_top  E_ads =  -0.4177 eV =   -40.30 kJ/mol ; Hg-Se = 3.169 3.692 Å ; 110 steps
+
+======================================================================
+SUMMARY
+======================================================================
+Model / site        E_ads (eV)  E_ads (kJ/mol)  Hg-Se 1st (Å)  Hg-Se 2nd (Å)
+----------------------------------------------------------------------------
+A: Se8_axis            -0.2176          -21.00          3.600          3.600
+A: Se8_atom            -0.1918          -18.50          3.641          4.111
+A: Se8_bond            -0.2204          -21.27          3.853          3.869
+B: chainend_gap        -0.4112          -39.67          2.968          3.494
+B: chainend_top        -0.4177          -40.30          3.169          3.692
+----------------------------------------------------------------------------
+Most stable chain-end site: B: chainend_top -> saved as Hg_aSe_best_relaxed.vasp (used in ../05_thermochemistry)
+Reference: Hg-Se bond in zinc-blende HgSe crystal = 2.63 Å
+Experiment: -dH_ads(red a-Se) > 85 kJ/mol , -dH_ads(t-Se) < 60 kJ/mol
