@@ -1,0 +1,83 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+======================================================================
+TRIGONAL SELENIUM (t-Se) BULK - MACE-MP-0 vs MACE-MP-0+D3
+======================================================================
+
+-----------------------------------
+MACE-MP-0 CALCULATIONS
+-----------------------------------
+Using Materials Project MACE for MACECalculator with /home/swastik/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+
+Relaxing atoms + cell of t-Se (3 atoms)
+      Step     Time          Energy          fmax
+BFGS:    0 08:21:56      -10.340689        0.527839
+BFGS:    1 08:21:56      -10.348265        0.433590
+BFGS:    2 08:21:56      -10.367010        0.249330
+BFGS:    3 08:21:56      -10.371206        0.290308
+BFGS:    4 08:21:56      -10.388207        0.357918
+BFGS:    5 08:21:56      -10.407578        0.308133
+BFGS:    6 08:21:56      -10.420161        0.191157
+BFGS:    7 08:21:56      -10.422005        0.091753
+BFGS:    8 08:21:56      -10.422472        0.027374
+BFGS:    9 08:21:56      -10.422504        0.022014
+BFGS:   10 08:21:56      -10.422548        0.020632
+BFGS:   11 08:21:56      -10.422678        0.021943
+BFGS:   12 08:21:56      -10.422942        0.021646
+BFGS:   13 08:21:56      -10.423391        0.017190
+BFGS:   14 08:21:56      -10.423830        0.013554
+BFGS:   15 08:21:57      -10.424050        0.009732
+BFGS:   16 08:21:57      -10.424092        0.002771
+
+MACE-MP-0 Results:
+  a                       : 4.6893 Å
+  c                       : 5.1631 Å
+  Se-Se intra-chain       : 2.3690 Å
+  Se...Se inter-chain     : 3.7920 Å
+  Cohesive energy         : 2.4894 eV/atom
+
+-----------------------------------
+MACE-MP-0+D3 CALCULATIONS
+-----------------------------------
+Using Materials Project MACE for MACECalculator with /home/swastik/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Using TorchDFTD3Calculator for D3 dispersion corrections
+
+Relaxing atoms + cell of t-Se (3 atoms)
+      Step     Time          Energy          fmax
+BFGS:    0 08:21:57      -11.284062        0.192458
+BFGS:    1 08:21:57      -11.284907        0.156604
+BFGS:    2 08:21:57      -11.286175        0.054259
+BFGS:    3 08:21:57      -11.286335        0.059555
+BFGS:    4 08:21:57      -11.287947        0.091277
+BFGS:    5 08:21:57      -11.290133        0.124439
+BFGS:    6 08:21:57      -11.293471        0.145505
+BFGS:    7 08:21:57      -11.296338        0.107848
+BFGS:    8 08:21:57      -11.298062        0.029396
+BFGS:    9 08:21:57      -11.298122        0.020710
+BFGS:   10 08:21:57      -11.298158        0.026762
+BFGS:   11 08:21:57      -11.298312        0.038975
+BFGS:   12 08:21:58      -11.298433        0.034559
+BFGS:   13 08:21:58      -11.298524        0.014718
+BFGS:   14 08:21:58      -11.298539        0.002440
+
+MACE-MP-0+D3 Results:
+  a                       : 4.2095 Å
+  c                       : 5.2720 Å
+  Se-Se intra-chain       : 2.3820 Å
+  Se...Se inter-chain     : 3.4160 Å
+  Cohesive energy         : 2.7809 eV/atom
+
+======================================================================
+COMPARISON WITH EXPERIMENT
+======================================================================
+Property         Exp.       MACE               MACE+D3           
+--------------------------------------------------------------
+a (Å)            4.3662     4.6893  ( +7.4%)  4.2095  ( -3.6%)
+c (Å)            4.9536     5.1631  ( +4.2%)  5.2720  ( +6.4%)
+d intra (Å)      2.3730     2.3690  ( -0.2%)  2.3820  ( +0.4%)
+d inter (Å)      3.4360     3.7920  (+10.4%)  3.4160  ( -0.6%)
+E_coh (eV/at)    2.4600     2.4894  ( +1.2%)  2.7809  (+13.0%)
+--------------------------------------------------------------
+
+Relaxed structures saved as tSe_bulk_relaxed_*.vasp (open in VESTA)
