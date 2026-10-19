@@ -1,0 +1,13 @@
+======================================================================
+t-Se(10-10) SLAB FROM MACE-MP-0+D3 RELAXED BULK
+======================================================================
+
+Bulk lattice used: a = 4.2095 Å, c = 5.2720 Å  (MACE-MP-0+D3)
+Chains found in the periodic slab: 4
+
+Slab: 108 Se atoms, 4 chain layers, 3x3 supercell
+Cell: [12.629 15.816 31.741] Å
+Se coordination numbers found: [np.int64(2)]  (must be [2] : whole chains only)
+Slab thickness: 11.741 Å
+
+Slab saved as tSe_10-10_slab.vasp (open in VESTA)
