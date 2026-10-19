@@ -1,0 +1,61 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+======================================================================
+THERMOCHEMISTRY OF Hg ADSORPTION ON SELENIUM - MACE-MP-0+D3
+======================================================================
+Using Materials Project MACE for MACECalculator with /home/swastik/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Using TorchDFTD3Calculator for D3 dispersion corrections
+
+Hg atom: H(298 K) - E = 0.0642 eV (= 5/2 kT), S(298 K, 1 bar) = 1.8134 meV/K
+  experiment: S(Hg, gas, 298 K) = 174.97 J/(mol K) = 1.8135 meV/K (NIST)
+
+======================================================================
+Hg on t-Se(10-10)
+======================================================================
+E_ads (0 K, electronic) = -0.2525 eV = -24.37 kJ/mol
+
+Vibrational frequencies of adsorbed Hg (cm-1):
+  Mode 1:     9.52
+  Mode 2:    10.08
+  Mode 3:    14.80
+ZPE = 2.13 meV = 0.206 kJ/mol
+
+   T (K)  dH_ads (kJ/mol)  dS_ads (J/mol/K)  dG_ads (kJ/mol)
+-------------------------------------------------------------
+  200.00           -23.53            -78.99            -7.73
+  298.15           -23.13            -77.33            -0.07
+  400.00           -22.70            -76.11             7.74
+  500.00           -22.29            -75.19            15.31
+  600.00           -21.87            -74.43            22.79
+-------------------------------------------------------------
+
+======================================================================
+Hg on t-Se chain end
+======================================================================
+E_ads (0 K, electronic) = -0.4177 eV = -40.30 kJ/mol
+
+Vibrational frequencies of adsorbed Hg (cm-1):
+  Mode 1:    20.73
+  Mode 2:    22.95
+  Mode 3:    55.77
+ZPE = 6.17 meV = 0.595 kJ/mol
+
+   T (K)  dH_ads (kJ/mol)  dS_ads (J/mol/K)  dG_ads (kJ/mol)
+-------------------------------------------------------------
+  200.00           -39.44           -103.26           -18.78
+  298.15           -39.04           -101.64            -8.73
+  400.00           -38.62           -100.44             1.55
+  500.00           -38.21            -99.51            11.55
+  600.00           -37.79            -98.76            21.46
+-------------------------------------------------------------
+
+======================================================================
+COMPARISON WITH EXPERIMENT (298 K)
+======================================================================
+Surface            -E_ads   -dH_ads    dH-E     experiment -dH_ads
+                   kJ/mol    kJ/mol  kJ/mol
+------------------------------------------------------------------
+t-Se(10-10)          24.4      23.1    1.24            < 60 (t-Se)
+t-Se chain end       40.3      39.0    1.26        > 85 (red a-Se)
+------------------------------------------------------------------
+Experiment: N.M. Chiera et al., J. Radioanal. Nucl. Chem. 311 (2017) 99
