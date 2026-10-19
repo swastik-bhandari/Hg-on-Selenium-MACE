@@ -1,0 +1,47 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+======================================================================
+Hg ON t-Se(10-10) : FULL RELAXATION OF THE BEST SITES, MACE-MP-0+D3
+======================================================================
+Using Materials Project MACE for MACECalculator with /home/swastik/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Using TorchDFTD3Calculator for D3 dispersion corrections
+
+-----------------------------------
+site1: start x=8.419 y=9.665 h=2.683 Å  (scan E_ads = -0.2363 eV)
+-----------------------------------
+  E_ads              = -0.2525 eV = -24.37 kJ/mol
+  3 nearest Hg-Se    = 3.669 3.860 4.004 Å
+  Hg height over top Se = 2.366 Å ; lateral move during relax = 0.420 Å
+  BFGS steps = 73
+
+-----------------------------------
+site2: start x=6.314 y=9.665 h=2.800 Å  (scan E_ads = -0.2059 eV)
+-----------------------------------
+  E_ads              = -0.2477 eV = -23.90 kJ/mol
+  3 nearest Hg-Se    = 3.633 3.918 4.012 Å
+  Hg height over top Se = 2.435 Å ; lateral move during relax = 1.658 Å
+  BFGS steps = 115
+
+-----------------------------------
+site3: start x=7.718 y=11.423 h=2.941 Å  (scan E_ads = -0.2033 eV)
+-----------------------------------
+  E_ads              = -0.2459 eV = -23.73 kJ/mol
+  3 nearest Hg-Se    = 3.641 3.829 3.947 Å
+  Hg height over top Se = 2.455 Å ; lateral move during relax = 1.292 Å
+  BFGS steps = 93
+
+======================================================================
+SUMMARY
+======================================================================
+Site      E_ads (eV)  E_ads (kJ/mol)  Hg-Se 1st (Å)  Hg-Se 2nd (Å)
+------------------------------------------------------------------
+site1        -0.2525          -24.37          3.669          3.860
+site2        -0.2477          -23.90          3.633          3.918
+site3        -0.2459          -23.73          3.641          3.829
+------------------------------------------------------------------
+
+Most stable: site1, -E_ads = 24.4 kJ/mol
+Saved as Hg_tSe_best_relaxed.vasp (used in ../05_thermochemistry)
+Experiment (thermochromatography): t-Se  -dH_ads < 60 kJ/mol
+                                   red a-Se -dH_ads > 85 kJ/mol
+NOTE: E_ads is a 0 K electronic energy ; the thermal correction to dH is in ../05_thermochemistry
