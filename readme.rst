@@ -66,7 +66,7 @@ Surface           -E_ads    -dH_ads    experiment -dH_ads  comment
 ================  ========  =========  ==================  ============================
 t-Se(10-10)       24.4      23.1       < 60                physisorption, d(Hg-Se) 3.67 A
 Se8 ring          21.3      -          -                   physisorption
-t-Se chain end    39.7      38.4       > 85 (red a-Se)     d(Hg-Se) 2.97 A, too weak
+t-Se chain end    40.30      39       > 85 (red a-Se)     d(Hg-Se) 2.97 A, too weak
 ================  ========  =========  ==================  ============================
 
 What I learned
